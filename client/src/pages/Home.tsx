@@ -26,11 +26,13 @@ const GITHUB_URL = "https://github.com/Kavaykhurana";
 const LEETCODE_URL = "https://leetcode.com/u/kavaykhurana/";
 const LINKEDIN_URL = "https://www.linkedin.com/in/kavay-khurana-437272322/";
 const EMAIL_URL = "mailto:kavaykhurana4@gmail.com";
+const PHONE_URL = "tel:+917428631825";
 
 const navItems = [
   ["Profile", "about"],
   ["Work", "projects"],
   ["Practice", "practice"],
+  ["Skills", "skills"],
   ["Contact", "contact"],
 ];
 
@@ -52,19 +54,28 @@ const projectCards = [
       "Docker-ready deployment with managed PostgreSQL",
     ],
   },
+];
+
+const skillGroups = [
   {
-    index: "02",
-    title: "Adventure Works Cycles",
-    eyebrow: "Data Mining · Customer Analysis",
-    description:
-      "A reproducible customer-data mining assignment that prepares and transforms source datasets through an executable Python and notebook workflow.",
-    stack: ["Python", "Pandas", "Jupyter", "Data Preprocessing"],
-    links: [["Repository", "https://github.com/Kavaykhurana/ML"]],
-    details: [
-      "Feature selection and data preparation pipeline",
-      "Min–max and Z-score transformations",
-      "Notebook notes, tables, and reproducible outputs",
-    ],
+    number: "01",
+    title: "Languages",
+    items: ["Java", "C++", "Python", "SQL", "TypeScript"],
+  },
+  {
+    number: "02",
+    title: "Backend engineering",
+    items: ["Spring Boot", "REST APIs", "Spring Security", "JPA", "Transactional logic"],
+  },
+  {
+    number: "03",
+    title: "Data & persistence",
+    items: ["PostgreSQL", "Relational data modeling", "Pandas", "Data preprocessing"],
+  },
+  {
+    number: "04",
+    title: "Frontend & tooling",
+    items: ["React", "Git", "GitHub", "Docker", "Maven", "pnpm"],
   },
 ];
 
@@ -186,7 +197,7 @@ export default function Home() {
           <div className="hero-footer">
             <p>Scroll to trace the route</p>
             <ArrowDown size={16} />
-            <span>01 / 04</span>
+            <span>01 / 05</span>
           </div>
         </section>
 
@@ -237,7 +248,7 @@ export default function Home() {
               <p className="eyebrow">Project ledger</p>
               <h2 id="project-title">Work that moves from <em>logic</em> to running systems.</h2>
             </div>
-            <p>Selected repositories that show my current direction across backend engineering, data work, and applied coursework.</p>
+            <p>A selected build that shows my current direction in Java backend engineering and production-minded system design.</p>
           </div>
 
           <div className="featured-project">
@@ -260,18 +271,6 @@ export default function Home() {
             </article>
           </div>
 
-          <div className="secondary-project">
-            <div className="secondary-project-number">02</div>
-            <div>
-              <p className="project-eyebrow">{projectCards[1].eyebrow}</p>
-              <h3>{projectCards[1].title}</h3>
-            </div>
-            <p className="project-description">{projectCards[1].description}</p>
-            <div className="secondary-project-bottom">
-              <div className="tech-stack">{projectCards[1].stack.map((item) => <span key={item}>{item}</span>)}</div>
-              <ExternalLink href={projectCards[1].links[0][1]}>Repository</ExternalLink>
-            </div>
-          </div>
         </section>
 
         <section id="practice" className="practice-section section-space" aria-labelledby="practice-title">
@@ -303,20 +302,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="toolkit-section section-space" aria-labelledby="toolkit-title">
-          <SectionLabel number="04" label="Toolkit" />
-          <div className="toolkit-header">
+        <section id="skills" className="skills-section section-space" aria-labelledby="skills-title">
+          <SectionLabel number="04" label="Technical skills" />
+          <div className="skills-header">
             <div>
-              <p className="eyebrow">Tools in rotation</p>
-              <h2 id="toolkit-title">The foundation I’m <em>growing.</em></h2>
+              <p className="eyebrow">Technical inventory</p>
+              <h2 id="skills-title">Skills I’m using to build <em>reliable systems.</em></h2>
             </div>
-            <p>Tools and concepts drawn from my project work, coursework, and problem-solving practice.</p>
+            <p>Technologies and concepts grounded in my coursework, coding practice, and the projects I am actively building.</p>
           </div>
-          <div className="toolkit-grid">
-            <article><div className="toolkit-icon"><Braces size={23} /></div><h3>Languages</h3><p>Java · C++ · Python · SQL · TypeScript</p></article>
-            <article><div className="toolkit-icon"><Layers3 size={23} /></div><h3>Backend</h3><p>Spring Boot · REST APIs · Spring Security · JPA</p></article>
-            <article><div className="toolkit-icon"><Database size={23} /></div><h3>Data</h3><p>PostgreSQL · Pandas · Data preprocessing</p></article>
-            <article><div className="toolkit-icon"><Terminal size={23} /></div><h3>Workflow</h3><p>Git · GitHub · Docker · Maven · pnpm</p></article>
+          <div className="skills-grid">
+            {skillGroups.map((group) => (
+              <article className="skill-group" key={group.title}>
+                <div className="skill-group-head"><span>{group.number}</span><div /><h3>{group.title}</h3></div>
+                <ul>
+                  {group.items.map((skill) => <li key={skill}><i aria-hidden="true" />{skill}</li>)}
+                </ul>
+              </article>
+            ))}
           </div>
         </section>
 
@@ -325,8 +328,16 @@ export default function Home() {
           <div className="contact-content">
             <p className="eyebrow">Next request</p>
             <h2 id="contact-title">Have an internship opportunity, project idea, or backend problem worth <em>solving?</em></h2>
-            <p className="contact-email-label">Personal email</p>
-            <a href={EMAIL_URL} className="contact-email">kavaykhurana4@gmail.com <ArrowUpRight size={25} /></a>
+            <div className="contact-directs">
+              <div>
+                <p className="contact-email-label">Personal email</p>
+                <a href={EMAIL_URL} className="contact-email">kavaykhurana4@gmail.com <ArrowUpRight size={25} /></a>
+              </div>
+              <div>
+                <p className="contact-email-label">Phone</p>
+                <a href={PHONE_URL} className="contact-email">7428631825 <ArrowUpRight size={25} /></a>
+              </div>
+            </div>
             <div className="contact-socials">
               <ExternalLink href={GITHUB_URL}>GitHub</ExternalLink>
               <ExternalLink href={LINKEDIN_URL}>LinkedIn</ExternalLink>
