@@ -43,7 +43,7 @@ const projectCards = [
     eyebrow: "Inventory · Purchasing · Sales OS",
     description:
       "A full-stack operating system for inventory, purchasing, and sales workflows, built around a transactional Java backend and production-minded access controls.",
-    stack: ["Java 21", "Spring Boot", "PostgreSQL", "React 19", "TypeScript"],
+    stack: ["Java 21", "Spring Boot", "PostgreSQL", "React 19", "JavaScript"],
     links: [
       ["Repository", "https://github.com/Kavaykhurana/EnterPrise_web_project"],
       ["Live system", "https://stockpilot-on32.onrender.com"],
@@ -60,22 +60,32 @@ const skillGroups = [
   {
     number: "01",
     title: "Languages",
-    items: ["Java", "C++", "Python", "SQL", "TypeScript"],
+    items: ["Java", "C++", "JavaScript", "Python", "SQL", "HTML/CSS"],
   },
   {
     number: "02",
-    title: "Backend engineering",
-    items: ["Spring Boot", "REST APIs", "Spring Security", "JPA", "Transactional logic"],
+    title: "Frameworks & Libraries",
+    items: ["Spring Boot 3.x", "Spring Security 6.x", "Spring Data JPA", "Hibernate", "Node.js", "Express.js", "React"],
   },
   {
     number: "03",
-    title: "Data & persistence",
-    items: ["PostgreSQL", "Relational data modeling", "Pandas", "Data preprocessing"],
+    title: "Databases",
+    items: ["PostgreSQL", "MongoDB", "MySQL"],
   },
   {
     number: "04",
-    title: "Frontend & tooling",
-    items: ["React", "Git", "GitHub", "Docker", "Maven", "pnpm"],
+    title: "Security",
+    items: ["JWT (JJWT 0.12.x)", "BCrypt Hashing", "Role-Based Access Control (RBAC)"],
+  },
+  {
+    number: "05",
+    title: "DevOps & Tools",
+    items: ["Git", "GitHub", "Maven", "Railway", "Vercel"],
+  },
+  {
+    number: "06",
+    title: "CS Fundamentals",
+    items: ["Data Structures & Algorithms", "DBMS", "Operating Systems", "Computer Networks", "OOP"],
   },
 ];
 
@@ -306,10 +316,13 @@ export default function Home() {
           <SectionLabel number="04" label="Technical skills" />
           <div className="skills-header">
             <div>
-              <p className="eyebrow">Technical inventory</p>
-              <h2 id="skills-title">Skills I’m using to build <em>reliable systems.</em></h2>
+              <p className="eyebrow">Technical Skills</p>
+              <h2 id="skills-title">A technical foundation for <em>reliable systems.</em></h2>
             </div>
-            <p>Technologies and concepts grounded in my coursework, coding practice, and the projects I am actively building.</p>
+            <div className="skills-context">
+              <p>Technologies and concepts drawn from my coursework, coding practice, and the projects I am actively building.</p>
+              <div><span>Patiala, India</span><span>Expected Jul 2028</span></div>
+            </div>
           </div>
           <div className="skills-grid">
             {skillGroups.map((group) => (
