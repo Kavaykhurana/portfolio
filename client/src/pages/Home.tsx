@@ -279,7 +279,7 @@ export default function Home() {
           <div className="practice-layout">
             <div className="practice-copy">
               <p className="eyebrow">Problem-solving rhythm</p>
-              <h2 id="practice-title">538 problems solved.<br /><em>Still tracing</em> the next edge case.</h2>
+              <h2 id="practice-title">Solved 500+ problems<br />on LeetCode.<br /><em>Still tracing</em> the next edge case.</h2>
               <p>
                 Consistent data-structures and algorithms practice helps me reason through constraints, simplify complex paths, and approach backend work with sharper fundamentals.
               </p>
@@ -289,7 +289,7 @@ export default function Home() {
               <img src="/manus-storage/kavay-practice-map_88241790.png" alt="Abstract topographic map representing coding practice" />
               <div className="leetcode-card">
                 <div><Code2 size={19} /><span>LEETCODE / C++</span></div>
-                <strong>538</strong>
+                <strong>500+</strong>
                 <p>problems solved</p>
                 <a href={LEETCODE_URL} target="_blank" rel="noreferrer">Profile <ArrowUpRight size={13} /></a>
               </div>
@@ -297,10 +297,9 @@ export default function Home() {
           </div>
 
           <div className="practice-stats" role="list" aria-label="Coding practice summary">
-            <div role="listitem"><span>417</span><p>Easy solved</p></div>
-            <div role="listitem"><span>115</span><p>Medium solved</p></div>
-            <div role="listitem"><span>6</span><p>Hard solved</p></div>
-            <div role="listitem"><span>1,480</span><p>Contest rating</p></div>
+            <div role="listitem"><span>C++</span><p>Primary language</p></div>
+            <div role="listitem"><span>DSA</span><p>Core focus</p></div>
+            <div role="listitem"><span>Practice</span><p>Deliberate and consistent</p></div>
           </div>
         </section>
 
@@ -326,6 +325,7 @@ export default function Home() {
           <div className="contact-content">
             <p className="eyebrow">Next request</p>
             <h2 id="contact-title">Have an internship opportunity, project idea, or backend problem worth <em>solving?</em></h2>
+            <p className="contact-email-label">Personal email</p>
             <a href={EMAIL_URL} className="contact-email">kavaykhurana4@gmail.com <ArrowUpRight size={25} /></a>
             <div className="contact-socials">
               <ExternalLink href={GITHUB_URL}>GitHub</ExternalLink>
