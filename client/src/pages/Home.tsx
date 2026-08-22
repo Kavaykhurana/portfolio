@@ -119,7 +119,7 @@ export default function Home() {
       <aside className="side-rail" aria-label="Site navigation">
         <a href="#top" className="brand-lockup" aria-label="Kavay Khurana — home">
           <img
-            src="/manus-storage/kavay-request-loop-logo_56736cdb.png"
+            src="/assets/kavay-request-loop-logo.png"
             alt="Kavay Khurana request response loop mark"
             className="brand-mark"
           />
@@ -156,7 +156,7 @@ export default function Home() {
 
       <header className="mobile-header">
         <a href="#top" className="mobile-brand" onClick={closeMenu}>
-          <img src="/manus-storage/kavay-request-loop-logo_56736cdb.png" alt="" />
+          <img src="/assets/kavay-request-loop-logo.png" alt="" />
           <span>Kavay Khurana</span>
         </a>
         <button
@@ -180,7 +180,7 @@ export default function Home() {
         <section className="hero-section" aria-labelledby="hero-title">
           <div className="hero-copy">
             <div className="hero-identity">
-              <img src="/manus-storage/kavay-request-loop-logo_56736cdb.png" alt="" />
+              <img src="/assets/kavay-request-loop-logo.png" alt="" />
               <div><strong>Kavay Khurana</strong><span>KK / JAVA BACKEND / CANDIDATE</span></div>
             </div>
             <div className="availability-pill"><span className="status-dot" /> Available for backend internships</div>
@@ -196,7 +196,7 @@ export default function Home() {
           </div>
 
           <div className="hero-art" aria-hidden="true">
-            <img src="/manus-storage/kavay-hero-service-route_875d3bfe.png" alt="" />
+            <img src="/assets/kavay-hero-service-route.png" alt="" />
             <div className="art-caption caption-client"><span>01</span> CLIENT</div>
             <div className="art-caption caption-service"><span>02</span> JAVA SERVICE</div>
             <div className="art-caption caption-store"><span>03</span> DATA STORE</div>
@@ -263,7 +263,7 @@ export default function Home() {
 
           <div className="featured-project">
             <div className="featured-image">
-              <img src="/manus-storage/kavay-system-map_9e94d632.png" alt="Abstract service architecture illustration" />
+              <img src="/assets/kavay-system-map.png" alt="Abstract service architecture illustration" />
               <span className="image-tab">FEATURED BUILD / 2026</span>
             </div>
             <article className="featured-copy">
@@ -295,7 +295,7 @@ export default function Home() {
               <a href={LEETCODE_URL} target="_blank" rel="noreferrer" className="primary-cta">View LeetCode profile <ArrowUpRight size={17} /></a>
             </div>
             <div className="practice-visual">
-              <img src="/manus-storage/kavay-practice-map_88241790.png" alt="Abstract topographic map representing coding practice" />
+              <img src="/assets/kavay-practice-map.png" alt="Abstract topographic map representing coding practice" />
               <div className="leetcode-card">
                 <div><Code2 size={19} /><span>LEETCODE / C++</span></div>
                 <strong>500+</strong>
