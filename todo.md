@@ -7,3 +7,4 @@
 - [x] Add 7428631825 as a visible, tap-to-call phone contact.
 - [x] Add a standalone Technical Skills section organized by category.
 - [x] Replace the Technical Skills section with the provided categories, technology list, location, and expected graduation detail.
+- [x] Add Runway to the DevOps and Tools list.

@@ -80,7 +80,7 @@ const skillGroups = [
   {
     number: "05",
     title: "DevOps & Tools",
-    items: ["Git", "GitHub", "Maven", "Railway", "Vercel"],
+    items: ["Git", "GitHub", "Maven", "Railway", "Vercel", "Runway"],
   },
   {
     number: "06",
