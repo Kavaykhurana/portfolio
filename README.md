@@ -6,7 +6,10 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Java](https://img.shields.io/badge/Java-21-ED8B00?style=flat-square&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Vercel](https://img.shields.io/badge/Deployment-Vercel-black?style=flat-square&logo=vercel&logoColor=white)](https://fortfolio-nine-dun.vercel.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+
+🌐 **Live Website**: [https://fortfolio-nine-dun.vercel.app](https://fortfolio-nine-dun.vercel.app)
 
 A personal developer portfolio built for **Kavay Khurana**, a Computer Science & Engineering student at **Thapar Institute of Engineering & Technology (TIET '28)** specializing in **Java Backend Engineering**, API architecture, and transactional systems.
 
