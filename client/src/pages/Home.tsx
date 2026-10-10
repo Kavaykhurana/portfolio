@@ -56,43 +56,29 @@ const projectCards = [
   },
   {
     index: "02",
-    title: "Aureus AI",
-    eyebrow: "Multi-agent financial platform",
+    title: "DocBuddy",
+    eyebrow: "Document Q&A with page-level citations",
     description:
-      "Five agents (analyst, risk, compliance, strategist, guardrail) work through each equity query, stream progress over SSE, and no trade executes without human approval.",
-    stack: ["Node.js", "Express", "React", "SQLite", "Docker"],
+      "Upload notes and PDFs, ask a question, and get an answer linked to the exact page it came from. If the documents don't contain the answer, it says so instead of guessing.",
+    stack: ["Java 21", "Spring Boot", "Spring AI", "Spring Security", "PostgreSQL + pgvector", "React"],
     links: [
-      ["Repository", "https://github.com/Kavaykhurana/Aureus_Ai"],
-      ["Live system", "https://aureus-ai-command-center.onrender.com"],
+      ["Repository", "https://github.com/Kavaykhurana/docbuddy"],
+      ["Live system", "https://docbuddy-sgg1.onrender.com"],
     ],
     details: [],
   },
   {
     index: "03",
-    title: "Tend",
-    eyebrow: "Family caregiving server for Alexa+",
+    title: "Job-buddy",
+    eyebrow: "Academia-industry placement portal",
     description:
-      "A self-hosted server that tracks an aging parent's medication doses, check-ins, appointments and family handoff notes, with alerts pushed to every caregiver's phone.",
-    stack: ["Node.js", "SQLite", "Amazon Bedrock"],
-    links: [["Repository", "https://github.com/Kavaykhurana/tend"]],
-    details: [],
-  },
-  {
-    index: "04",
-    title: "StockPilot",
-    eyebrow: "Inventory · Purchasing · Sales OS",
-    description:
-      "A full-stack operating system for inventory, purchasing, and sales workflows, built around a transactional Java backend and production-minded access controls.",
-    stack: ["Java 21", "Spring Boot", "PostgreSQL", "React 19", "JavaScript"],
+      "One platform for students, recruiters, institutions and academicians, so placements are matched on assessed skills instead of self-reported resumes. Lead contributor in a team of 3.",
+    stack: ["Java 21", "Spring Boot 4", "Spring Data JPA", "PostgreSQL", "React", "Docker"],
     links: [
-      ["Repository", "https://github.com/Kavaykhurana/EnterPrise_web_project"],
-      ["Live system", "https://stockpilot-on32.onrender.com"],
+      ["Repository", "https://github.com/Kavaykhurana/Job-buddy"],
+      ["Live system", "https://job-buddy-hs1e.onrender.com"],
     ],
-    details: [
-      "Transactional stock validation for multi-line orders",
-      "Role-based access control with Spring Security",
-      "Docker-ready deployment with managed PostgreSQL",
-    ],
+    details: [],
   },
 ];
 
