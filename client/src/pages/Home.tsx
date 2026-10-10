@@ -39,6 +39,46 @@ const navItems = [
 const projectCards = [
   {
     index: "01",
+    title: "Warden",
+    eyebrow: "Permission-aware AI assistant · Spring Security",
+    description:
+      "A college assistant where students, faculty and admins ask for things in plain English. The AI picks a backend tool; Spring Security decides whether that user may run it. The AI can only ask.",
+    stack: ["Java 21", "Spring Boot", "Spring Security", "Spring AI", "JWT", "PostgreSQL", "Docker", "React"],
+    links: [
+      ["Repository", "https://github.com/Kavaykhurana/warden"],
+      ["Live system", "https://warden-mauve.vercel.app"],
+    ],
+    details: [
+      "Every tool call runs through @PreAuthorize as the signed-in user",
+      "Sensitive actions need approval from a second, eligible person",
+      "Hash-chained, append-only audit log of every decision and injection attempt",
+    ],
+  },
+  {
+    index: "02",
+    title: "Aureus AI",
+    eyebrow: "Multi-agent financial platform",
+    description:
+      "Five agents (analyst, risk, compliance, strategist, guardrail) work through each equity query, stream progress over SSE, and no trade executes without human approval.",
+    stack: ["Node.js", "Express", "React", "SQLite", "Docker"],
+    links: [
+      ["Repository", "https://github.com/Kavaykhurana/Aureus_Ai"],
+      ["Live system", "https://aureus-ai-command-center.onrender.com"],
+    ],
+    details: [],
+  },
+  {
+    index: "03",
+    title: "Tend",
+    eyebrow: "Family caregiving server for Alexa+",
+    description:
+      "A self-hosted server that tracks an aging parent's medication doses, check-ins, appointments and family handoff notes, with alerts pushed to every caregiver's phone.",
+    stack: ["Node.js", "SQLite", "Amazon Bedrock"],
+    links: [["Repository", "https://github.com/Kavaykhurana/tend"]],
+    details: [],
+  },
+  {
+    index: "04",
     title: "StockPilot",
     eyebrow: "Inventory · Purchasing · Sales OS",
     description:
@@ -60,27 +100,27 @@ const skillGroups = [
   {
     number: "01",
     title: "Languages",
-    items: ["Java", "C++", "JavaScript", "Python", "SQL", "HTML/CSS"],
+    items: ["Java", "C++", "C", "Python", "JavaScript", "SQL", "HTML/CSS"],
   },
   {
     number: "02",
     title: "Frameworks & Libraries",
-    items: ["Spring Boot 3.x", "Spring Security 6.x", "Spring Data JPA", "Hibernate", "Node.js", "Express.js", "React"],
+    items: ["Spring", "Spring Boot", "Spring Security", "Spring AI", "Spring Data JPA", "Hibernate", "Microservices", "REST APIs", "Node.js", "Express.js", "React"],
   },
   {
     number: "03",
     title: "Databases",
-    items: ["PostgreSQL", "MongoDB", "MySQL"],
+    items: ["PostgreSQL", "MySQL", "MongoDB", "SQLite"],
   },
   {
     number: "04",
     title: "Security",
-    items: ["JWT (JJWT 0.12.x)", "BCrypt Hashing", "Role-Based Access Control (RBAC)"],
+    items: ["JWT", "OAuth2", "BCrypt Hashing", "Role-Based Access Control (RBAC)"],
   },
   {
     number: "05",
     title: "DevOps & Tools",
-    items: ["Git", "GitHub", "Maven", "Railway", "Vercel", "Runway"],
+    items: ["Git", "GitHub", "Maven", "Docker", "JUnit 5", "Testcontainers", "Swagger/OpenAPI", "Vercel", "Render", "Railway"],
   },
   {
     number: "06",
@@ -240,7 +280,7 @@ export default function Home() {
               <div className="fact-icon"><Server size={21} /></div>
               <p className="fact-label">Current focus</p>
               <h3>Java backend systems</h3>
-              <div className="tag-cluster"><span>Spring Boot</span><span>APIs</span><span>SQL</span></div>
+              <div className="tag-cluster"><span>Spring Boot</span><span>Spring Security</span><span>Microservices</span><span>SQL</span></div>
             </div>
             <div className="fact-card fact-location">
               <div className="fact-icon"><CircleDot size={21} /></div>
@@ -258,7 +298,7 @@ export default function Home() {
               <p className="eyebrow">Project ledger</p>
               <h2 id="project-title">Work that moves from <em>logic</em> to running systems.</h2>
             </div>
-            <p>A selected build that shows my current direction in Java backend engineering and production-minded system design.</p>
+            <p>Selected builds that show my current direction: Java backend engineering, access control, and systems that keep a verifiable record.</p>
           </div>
 
           <div className="featured-project">
@@ -281,6 +321,20 @@ export default function Home() {
             </article>
           </div>
 
+          {projectCards.slice(1).map((project) => (
+            <div className="secondary-project" key={project.title}>
+              <div className="secondary-project-number">{project.index}</div>
+              <div>
+                <p className="project-eyebrow">{project.eyebrow}</p>
+                <h3>{project.title}</h3>
+              </div>
+              <p className="project-description">{project.description}</p>
+              <div className="secondary-project-bottom">
+                <div className="tech-stack">{project.stack.map((item) => <span key={item}>{item}</span>)}</div>
+                <div className="project-links">{project.links.map(([label, url]) => <ExternalLink key={label} href={url}>{label}</ExternalLink>)}</div>
+              </div>
+            </div>
+          ))}
         </section>
 
         <section id="practice" className="practice-section section-space" aria-labelledby="practice-title">
